@@ -232,7 +232,13 @@ git clone https://github.com/0x240x23elu/JSScanner.git
 cd JSScanner
 pip3 install -r requirements.txt
 
+echo "Installing getJs"
+go get github.com/003random/getJS
+ln -s $HOME/go/bin/getJS /usr/bin/getJS
 
+echo "Installing html-tool"
+go get -u github.com/tomnomnom/hacks/html-tool
+ln -s $HOME/go/bin/html-tool /usr/bin/html-tool
 
 echo "Don't forget to put the API keys on Subfinder on: $HOME/.config/subfinder/config.yaml"
 echo "Don't forget to put the API key on Chaos like this: echo 'export CHAOS_KEY="*************bd853b95252690b3ff86c2c2c08b*******************"' >> $HOME/.bashrc"
